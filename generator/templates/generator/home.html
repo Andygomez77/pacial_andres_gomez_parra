@@ -1,0 +1,82 @@
+{% extends 'generator/layout.html' %}
+{% block content %}
+{% load static %}
+
+<section class="center-text fade-in">
+    <div>
+        <h2>vehiculos Nuevos</h2>
+        <p>Descubre nuestra amplia selección de vehiculos nuevos y usados de diferentes marcas y estilos.</p>
+    </div>
+</section>
+<section class="features fade-in">
+    <div class="feature">
+        <div class="feature-image feature-image-one"></div>
+        <div class="feature-content">
+            <h3>Marcas Variadas</h3>
+            <p>Descubre nuestra amplia selección de carros nuevos de diferentes marcas y estilos.</p>
+            <a href="#" class="button">Ver</a>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="feature-image feature-image-two"></div>
+        <div class="feature-content">
+            <h3>Carros Usados</h3>
+            <p>Encuentra excelentes ofertas en nuestra colección de carros usados de alta calidad.</p>
+            <a href="#" class="button">Ver</a>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="feature-image feature-image-three"></div>
+        <div class="feature-content">
+            <h3>Carros de Lujo</h3>
+            <p>Explora nuestra exclusiva gama de carros de lujo para satisfacer tus gustos más exigentes.</p>
+            <a href="#" class="button">Ver</a>
+        </div>
+    </div>
+</section>
+<section class="product-gallery fade-in">
+    <div class="container">
+        <h2>Productos Destacados</h2>
+    </div>
+</section>
+<section class="about fade-in">
+    <div class="container about-content">
+        <div class="text-content">
+            <h2>Descubre nuestra historia en Carsell</h2>
+            <p>En Carsell nos dedicamos a la reventa de carros de todas las marcas, desde los modelos más básicos
+                hasta los más lujosos. Conoce nuestra amplia selección de vehículos.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p>¡Con nosotros!</p>
+                </div>
+                <div class="stat">
+                    <h3>15</h3>
+                    <p>Clientes satisfechos confían</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="{% static 'porfo/interior.jpg'%}" alt="About Carsell">
+        </div>
+    </div>
+</section>
+<section class="testimonial fade-in">
+    <div class="testimonial-content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>¡Excelente experiencia comprando mi carro en Carsell! Amplia variedad de marcas y modelos, ¡encontré el
+            carro de mis sueños! Altamente recomendado.</p>
+        <div class="testimonial-author">
+            <img src="{% static 'porfo/maria.png' %}" alt="María González">
+            <p>María Antonella</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

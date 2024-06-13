@@ -1,0 +1,434 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contenedor h1 {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4%);
+}
+
+.card-header {
+    height: 200px;
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.card-price {
+    flex-grow: 1;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: #605f5f;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-header img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card:hover .btn {
+    background: #2fb4cc;
+    color: white;
+    
+}
+.card:hover  {
+   cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li.cart a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.cart a i {
+    margin-right: 5px;
+}
+
+.hero {
+    position: relative;
+    height: 600px;
+    background: url('./porfo/carromostra2.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.info-section {
+    padding: 2rem 0;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-image {
+    flex: 1;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-text {
+    flex: 1;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.info-text h2,
+.info-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 16px;
+}
+
+
+.model-gallery {
+    padding: 2rem 0;
+}
+
+.model-gallery .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.model {
+    flex: 1 1 calc(50% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.model img {
+    max-width: 100%;
+    height: auto;
+}
+
+.model h3 {
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.model p {
+    font-size: 16px;
+    color: #555;
+}
+
+.footer {
+    background: #1d1d75;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1 1 45%;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-left .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-left .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-right {
+    flex: 1 1 45%;
+    text-align: right;
+}
+
+.footer-right h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+}
+
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+
+article h2, h3{
+    font-size: 2.65rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: #1d1d75;
+    text-align: left;
+    
+}
+#prodetails .single-pro-details h6{
+    font-size: 20px;
+    color: #1d1d75;
+}
+
+#prodetails .single-pro-details h2{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h3{
+    padding-bottom: 20px;
+}
+
+.panel-one{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px;
+    border-bottom: 1px solid #cbc9c9; 
+}
+.panel-one div {
+    padding: 20px;
+}
+.panel-one h4{
+    font-size: 27px;
+    color: #1d1d75;
+    padding-right: 20px;
+}
+
+.panel-one h4{
+    font-size: 27px;
+    color: #1d1d75;
+    padding-right: 20px;
+}
+
+
+
+
+@media(min-width: 480px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}

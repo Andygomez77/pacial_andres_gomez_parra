@@ -1,0 +1,18 @@
+{% load static %}
+<header class="fade-in">
+    <div class="container">
+      <div class="logo">
+        <img src="{% static 'porfo/logo.png' %}" alt="Logo" class="logo-img">
+        <h1>carsell</h1>  
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}" class="active">Inicio</a></li>
+          <li><a href="{% url 'modelos:models' %}">Modelos</a></li>
+          <li><a href="{% url 'about' %}">Sobre nosotros</a></li>
+          <!-- <li class="cart"><a href="#"><i class="fas fa-shopping-bag"></i> (0)</a></li>
+          <li class="user"><a href="#"><i class="fas fa-user"></i></a></li> -->
+        </ul>
+      </nav>
+    </div>
+  </header>
